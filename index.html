@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
+    body {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 18px;
+      color: #111;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 36px;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .links-container {
+      font-size: 24px;
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .links-container a {
+      text-decoration: none;
+      margin: 10px;
+      color: inherit;
+      font-size: 1.5rem; 
+    }
+
+    .links-container a:hover {
+      color: #ff5733; 
+    }
+
+    .separator {
+      margin: 10px;
+      letter-spacing: -2px;
+      vertical-align: middle;
+    }
+
+    @media screen and (min-width: 768px) {
+      h1 {
+        font-size: 48px;
+      }
+
+      .links-container a {
+        font-size: 1.8rem; 
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      body {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .links-container a {
+        font-size: 18px; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="landing">
+    <h1>Autocratic Binary</h1>
+    <div class="links-container">
+      <a href="./whoami.html">./whoami</a>
+      <span class="separator">|</span>
+      <a href="./connect.html">./connect</a>
+    </div>
+  </div>
+</body>
+</html>
