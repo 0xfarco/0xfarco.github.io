@@ -32,29 +32,32 @@
       font-size: 28px;
       margin-top: 30px;
       margin-bottom: 10px;
-      text-align: center;
+/*      text-align: center;*/
     }
 
     p {
       max-width: 800px;
-      text-align: center;
+/*      text-align: center;*/
       line-height: 1.6;
     }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
     }
 
-    li {
-      font-size: 20px;
-      margin: 10px 0;
-      font-weight: bold;
+    table, th, td {
+      border: 1px solid #ddd;
     }
 
-    .back-link {
-      margin-top: 30px;
-      font-size: 20px;
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
     }
 
     a {
@@ -67,10 +70,9 @@
       color: #ff5733; /* Hover color */
     }
 
-    ul a {
-      color: #111;
-      text-decoration: none;
-      font-weight: normal;
+    .back-link {
+      margin-top: 30px;
+      font-size: 20px;
     }
 
     @media screen and (max-width: 480px) {
@@ -82,7 +84,7 @@
         font-size: 24px;
       }
 
-      p, li {
+      p, td {
         font-size: 16px;
       }
     }
@@ -91,22 +93,98 @@
 <body>
   <div class="bin">
     <h1>bin</h1>
-    <h2>Programs I Use</h2>
+    <h2>Programs</h2>
 
-    <ul>
-      <li>Operatig System : <a href="https://artixlinux.org/">Artix Linux</a></li>
-      <li>Terminal : <a href="https://github.com/0xfarco/st">ST</a></li>
-      <li>Window Manager / Desktop Environment : <a href="https://github.com/0xfarco/dwm">DWM</a></li>
-      <li>Text Editor / IDE : <a href="https://github.com/0xfarco/dotfiles/tree/main/.emacs.d">Emacs</a></li>
-      <li>Virtualization software : <a href="https://www.qemu.org/">QEMU</a></li>
-      <li>Browser : <a href="https://www.mozilla.org/en-US/firefox/">Firefox</a></li>
-      <li>CTF / Hacking : <a href="https://www.docker.com/">Docker</a></li>
-      <li>Note-Taking : <a href="https://obsidian.md/">Obsidian</a></li>
-      <li>File Manager : <a href="https://github.com/gokcehan/lf">LF</a></li>
-      <li>Mail Client : <a href="https://neomutt.org/">NeoMutt</a></li>
-      <li>PDF Viewer : <a href="https://pwmt.org/projects/zathura/">Zathura</a></li>
-      <li>Image Viewer : <a href="https://github.com/nsxiv/nsxiv">NSXIV</a></li>
-    </ul>
+    <table>
+      <!-- <tr> -->
+        <!-- <th>Program</th> -->
+        <!-- <th>Link</th> -->
+      <!-- </tr> -->
+      <tr>
+        <td>Operating System</td>
+        <td><a href="https://artixlinux.org/">Artix Linux</a></td>
+      </tr>
+      <tr>
+        <td>Terminal</td>
+        <td><a href="https://github.com/0xfarco/st">ST</a></td>
+      </tr>
+      <tr>
+        <td>Shell</td>
+        <td><a href="https://www.gnu.org/software/bash/">Bash</a></td>
+      </tr>
+      <tr>
+        <td>Window Manager / Desktop Environment</td>
+        <td><a href="https://github.com/0xfarco/dwm">DWM</a></td>
+      </tr>
+      <tr>
+        <td>Status Monitor</td>
+        <td><a href="https://github.com/0xfarco/slstatus">slstatus</a></td>
+      </tr>
+      <tr>
+        <td>Application launcher</td>
+        <td><a href="https://github.com/davatorium/rofi">Rofi</a></td>
+      </tr>
+      <tr>
+        <td>Text Editor / IDE</td>
+        <td><a href="https://github.com/0xfarco/dotfiles/tree/main/.emacs.d">Emacs</a> / <a href="https://github.com/0xfarco/dotfiles/tree/main/nvim">NVIM</a></td>
+      </tr>
+      <tr>
+        <td>Virtualization Software</td>
+        <td><a href="https://www.qemu.org/">QEMU</a></td>
+      </tr>
+      <tr>
+        <td>Browser</td>
+        <td><a href="https://www.mozilla.org/en-US/firefox/">Firefox</a></td>
+      </tr>
+      <tr>
+        <td>CTF / Hacking</td>
+        <td><a href="https://www.docker.com/">Docker</a></td>
+      </tr>
+      <tr>
+        <td>Note-Taking</td>
+        <td><a href="https://www.notion.com/">Notion</a></td>
+      </tr>
+      <tr>
+        <td>File Manager</td>
+        <td><a href="https://yazi-rs.github.io/">Yazi</a></td>
+      </tr>
+      <tr>
+        <td>Mail Client</td>
+        <td><a href="https://neomutt.org/">NeoMutt</a></td>
+      </tr>
+      <tr>
+        <td>PDF Viewer</td>
+        <td><a href="https://pwmt.org/projects/zathura/">Zathura</a></td>
+      </tr>
+      <tr>
+        <td>Image Viewer</td>
+        <td><a href="https://github.com/nsxiv/nsxiv">NSXIV</a></td>
+      </tr>
+      <tr>
+        <td>Video Player</td>
+        <td><a href="https://mpv.io/">MPV</a></td>
+      </tr>
+      <tr>
+        <td>Recording</td>
+        <td><a href="https://github.com/0xfarco/dotfiles/blob/main/bin/dmenurecord">FFmpeg</a></td>
+      </tr>
+      <tr>
+        <td>Scheduler</td>
+        <td><a href="https://calcurse.org/">Calcurse</a></td>
+      </tr>
+      <tr>
+        <td>Torrent Client</td>
+        <td><a href="https://www.qbittorrent.org/">qBittorrent</a></td>
+      </tr>
+      <tr>
+        <td>Screen Locker</td>
+        <td><a href="https://tools.suckless.org/slock/">slock</a></td>
+      </tr>
+      <tr>
+        <td>Terminal Multiplexer</td>
+        <td><a href="https://github.com/tmux/tmux">tmux</a></td>
+      </tr>
+    </table>
 
     <div class="back-link">
       <a href="index.html">&larr; ../home</a>
