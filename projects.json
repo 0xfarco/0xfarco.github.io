@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Shellium",
+    "link": "https://github.com/0xfarco/shellium",
+    "description": "Simple Unix shell"
+  },
+  {
+    "name": "Pica",
+    "link": "https://github.com/0xfarco/pica",
+    "description": "Simple image viewer"
+  },
+  {
+    "name": "Shadex",
+    "link": "https://github.com/0xfarco/shadex",
+    "description": "Prints images in terminal using term256 colors"
+  },
+  {
+    "name": "VirtuaLC3",
+    "link": "https://github.com/0xfarco/virtualc3",
+    "description": "LC3 VM that can run assembly language programs, such as 2048 or my Roguelike"
+  },
+  {
+    "name": "Cadet",
+    "link": "https://github.com/0xfarco/cadet",
+    "description": "A simple terminal text editor with basic editing features"
+  },
+  {
+    "name": "Zoomer",
+    "link": "https://github.com/0xfarco/zoomer",
+    "description": "Screen magnifier for Linux"
+  },
+  {
+    "name": "Snortify",
+    "link": "https://github.com/0xfarco/snortify",
+    "description": "Snort rule generator in Bash"
+  },
+  {
+    "name": "Aestego",
+    "link": "https://github.com/0xfarco/aestego",
+    "description": "A tool for securely hiding AES-encrypted data in images using LSB steganography"
+  },
+  {
+    "name": "Term256",
+    "link": "https://github.com/0xfarco/term256",
+    "description": "A terminal tool to display all 256 colors supported by modern terminals"
+  }
+]
+

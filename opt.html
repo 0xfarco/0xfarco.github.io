@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>opt</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
@@ -46,7 +46,7 @@
     }
 
     a:hover {
-      color: #ff5733; /* Hover color */
+      color: #ff5733;
     }
 
     .back-link {
@@ -103,65 +103,16 @@
 
     <!-- Projects Table -->
     <h2>Projects</h2>
-    <table>
-      <tr>
-        <th>Project Name</th>
-        <th>Description</th>
-      </tr>
-
-      <!-- Project 1 -->
-      <tr>
-        <td><a href="https://github.com/0xfarco/shellium" target="_blank">Shellium</a></td>
-        <td>Simple Unix shell</td>
-      </tr>
-
-      <!-- Project 2 -->
-      <tr>
-        <td><a href="https://github.com/0xfarco/pica" target="_blank">Pica</a></td>
-        <td>Simple image viewer</td>
-      </tr>
-
-      <!-- Project 3 -->
-      <tr>
-        <td><a href="https://github.com/0xfarco/shadex" target="_blank">Shadex</a></td>
-        <td>Prints images in terminal using term256 colors</td>
-      </tr>
-
-      <!-- Project 4 -->
-      <tr>
-        <td><a href="https://github.com/0xfarco/virtualc3" target="_blank">VirtuaLC3</a></td>
-        <td>LC3 VM that can run assembly language programs, such as 2048 or my Roguelike</td>
-      </tr>
-
-      <!-- Project 5 -->
-      <tr>
-        <td><a href="https://github.com/0xfarco/cadet" target="_blank">Cadet</a></td>
-        <td>A simple terminal text editor with basic editing features</td>
-      </tr>
-
-      <!-- Project 6 -->
-      <tr>
-        <td><a href="https://github.com/0xfarco/zoomer" target="_blank">Zoomer</a></td>
-        <td>Screen magnifier for Linux</td>
-      </tr>
-
-      <!-- Project 7 -->
-      <tr>
-        <td><a href="https://github.com/0xfarco/snortify" target="_blank">Snortify</a></td>
-        <td>Snort rule generator in Bash</td>
-      </tr>
-
-      <!-- Project 8 -->
-      <tr>
-        <td><a href="https://github.com/0xfarco/aestego" target="_blank">Aestego</a></td>
-        <td>A tool for securely hiding AES-encrypted data in images using LSB steganography</td>
-      </tr>
-
-      <!-- Project 9 -->
-      <tr>
-        <td><a href="https://github.com/0xfarco/term256" target="_blank">Term256</a></td>
-        <td>A terminal tool to display all 256 colors supported by modern terminals</td>
-      </tr>
+    <table id="projects-table">
+      <thead>
+        <tr>
+          <th>Project Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Projects will be injected here via JavaScript -->
+      </tbody>
     </table>
 
     <!-- Back Link -->
@@ -169,5 +120,30 @@
       <a href="index.html">&larr; ../home</a>
     </div>
   </div>
+
+  <script>
+    fetch('projects.json')
+      .then(res => res.json())
+      .then(data => {
+        const tbody = document.querySelector('#projects-table tbody');
+        data.forEach(project => {
+          const tr = document.createElement('tr');
+
+          const tdName = document.createElement('td');
+          tdName.innerHTML = `<a href="${project.link}" target="_blank">${project.name}</a>`;
+
+          const tdDesc = document.createElement('td');
+          tdDesc.textContent = project.description;
+
+          tr.appendChild(tdName);
+          tr.appendChild(tdDesc);
+          tbody.appendChild(tr);
+        });
+      })
+      .catch(err => {
+        console.error('Failed to load projects.json:', err);
+      });
+  </script>
 </body>
 </html>
+
