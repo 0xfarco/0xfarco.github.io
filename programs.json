@@ -1,0 +1,116 @@
+[
+  {
+    "type": "Operating System",
+    "tool": "Artix Linux",
+    "link": "https://artixlinux.org/"
+  },
+  {
+    "type": "Terminal",
+    "tool": "ST",
+    "link": "https://github.com/0xfarco/st"
+  },
+  {
+    "type": "Shell",
+    "tool": "Bash",
+    "link": "https://www.gnu.org/software/bash/"
+  },
+  {
+    "type": "Window Manager / Desktop Environment",
+    "tool": "DWM",
+    "link": "https://github.com/0xfarco/dwm"
+  },
+  {
+    "type": "Status Monitor",
+    "tool": "dwmblocks",
+    "link": "https://github.com/0xfarco/dwmblocks"
+  },
+  {
+    "type": "Application Launcher",
+    "tool": "Rofi",
+    "link": "https://github.com/davatorium/rofi"
+  },
+  {
+    "type": "Text Editor / IDE",
+    "tool": [
+      {
+        "name": "Emacs",
+        "link": "https://github.com/0xfarco/dotfiles/tree/main/.emacs.d"
+      },
+      {
+        "name": "NVIM",
+        "link": "https://github.com/0xfarco/dotfiles/tree/main/nvim"
+      }
+    ]
+  },
+  {
+    "type": "Virtualization Software",
+    "tool": "QEMU",
+    "link": "https://www.qemu.org/"
+  },
+  {
+    "type": "Browser",
+    "tool": "Firefox",
+    "link": "https://www.mozilla.org/en-US/firefox/"
+  },
+  {
+    "type": "CTF / Hacking",
+    "tool": "Docker",
+    "link": "https://www.docker.com/"
+  },
+  {
+    "type": "Note-Taking",
+    "tool": "Notion",
+    "link": "https://www.notion.com/"
+  },
+  {
+    "type": "File Manager",
+    "tool": "Yazi",
+    "link": "https://yazi-rs.github.io/"
+  },
+  {
+    "type": "Mail Client",
+    "tool": "NeoMutt",
+    "link": "https://neomutt.org/"
+  },
+  {
+    "type": "PDF Viewer",
+    "tool": "Zathura",
+    "link": "https://pwmt.org/projects/zathura/"
+  },
+  {
+    "type": "Image Viewer",
+    "tool": "NSXIV",
+    "link": "https://github.com/nsxiv/nsxiv"
+  },
+  {
+    "type": "Video Player",
+    "tool": "MPV",
+    "link": "https://mpv.io/"
+  },
+  {
+    "type": "Recording",
+    "tool": "FFmpeg",
+    "link": "https://github.com/0xfarco/dotfiles/blob/main/bin/dmenurecord"
+  },
+  {
+    "type": "Scheduler",
+    "tool": "Calcurse",
+    "link": "https://calcurse.org/"
+  },
+  {
+    "type": "Torrent Client",
+    "tool": "qBittorrent",
+    "link": "https://www.qbittorrent.org/"
+  },
+  {
+    "type": "Screen Locker",
+    "tool": "slock",
+    "link": "https://tools.suckless.org/slock/"
+  },
+  {
+    "type": "Terminal Multiplexer",
+    "tool": "tmux",
+    "link": "https://github.com/tmux/tmux"
+  }
+]
+
