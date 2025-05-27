@@ -1,5 +1,10 @@
 [
   {
+    "name": "Chisel",
+    "link": "https://github.com/0xfarco/chisel",
+    "description": "Chisel is a simple C-based tool that automates video editing by reading a CHISEL file describing input videos and timestamped chunks. It uses FFmpeg to extract and concatenate these chunks into a final video."
+  },
+  {
     "name": "Shellium",
     "link": "https://github.com/0xfarco/shellium",
     "description": "Simple Unix shell"
