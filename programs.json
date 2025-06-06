@@ -1,8 +1,8 @@
 [
   {
     "type": "Operating System",
-    "tool": "Artix Linux",
-    "link": "https://artixlinux.org/"
+    "tool": "Gentoo",
+    "link": "https://www.gentoo.org/"
   },
   {
     "type": "Terminal",
