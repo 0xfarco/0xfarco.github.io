@@ -21,8 +21,8 @@
   },
   {
     "type": "Status Monitor",
-    "tool": "dwmblocks",
-    "link": "https://github.com/0xfarco/dwmblocks"
+    "tool": "slstatus",
+    "link": "https://github.com/0xfarco/slstatus"
   },
   {
     "type": "Application Launcher",
@@ -51,11 +51,6 @@
     "type": "Browser",
     "tool": "LibreWolf",
     "link": "https://librewolf.net/"
-  },
-  {
-    "type": "CTF / Hacking",
-    "tool": "Docker",
-    "link": "https://www.docker.com/"
   },
   {
     "type": "Note-Taking",
