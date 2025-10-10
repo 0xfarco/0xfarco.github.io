@@ -45,7 +45,7 @@
   {
     "type": "Virtualization Software",
     "tool": "QEMU",
-    "link": "https://www.qemu.org/"
+    "link": "https://github.com/0xfarco/virt"
   },
   {
     "type": "Browser",
@@ -85,7 +85,7 @@
   {
     "type": "Recording",
     "tool": "FFmpeg",
-    "link": "https://github.com/0xfarco/dotfiles/blob/main/bin/dmenurecord"
+    "link": "https://github.com/0xfarco/dotfiles/blob/main/bin/record"
   },
   {
     "type": "Scheduler",
