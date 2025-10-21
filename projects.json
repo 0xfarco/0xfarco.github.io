@@ -1,5 +1,15 @@
 [
   {
+    "name": "LetterBox",
+    "link": "https://github.com/0xfarco/letterbox",
+    "description": "A cloud-native newsletter application built with Rust, Actix Web, and PostgreSQL. The project includes a subscription handler that manages user subscriptions, storing data asynchronously in a PostgreSQL database via SQLx. It also integrates tracing for structured logging and telemetry, enabling real-time monitoring of application performance and subscription events."
+  },
+  {
+    "name": "Rooster",
+    "link": "https://github.com/0xfarco/rooster",
+    "description": "A basic web server in Rust that listens for TCP connections, parses HTTP requests, and generates appropriate HTTP responses. The server uses a thread pool to handle multiple requests concurrently, improving throughput and performance."
+  },
+  {
     "name": "Chisel",
     "link": "https://github.com/0xfarco/chisel",
     "description": "Chisel is a simple C-based tool that automates video editing by reading a CHISEL file describing input videos and timestamped chunks. It uses FFmpeg to extract and concatenate these chunks into a final video"
