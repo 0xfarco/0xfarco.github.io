@@ -26,8 +26,8 @@
   },
   {
     "type": "Application Launcher",
-    "tool": "Rofi",
-    "link": "https://github.com/davatorium/rofi"
+    "tool": "DMenu",
+    "link": "https://github.com/0xfarco/dmenu"
   },
   {
     "type": "Text Editor / IDE",
@@ -58,11 +58,6 @@
     "link": "https://www.notion.com/"
   },
   {
-    "type": "File Manager",
-    "tool": "Yazi",
-    "link": "https://yazi-rs.github.io/"
-  },
-  {
     "type": "Mail Client",
     "tool": "NeoMutt",
     "link": "https://neomutt.org/"
@@ -91,11 +86,6 @@
     "type": "Scheduler",
     "tool": "Calcurse",
     "link": "https://calcurse.org/"
-  },
-  {
-    "type": "Torrent Client",
-    "tool": "qBittorrent",
-    "link": "https://www.qbittorrent.org/"
   },
   {
     "type": "Screen Locker",
