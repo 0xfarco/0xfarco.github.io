@@ -1,144 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>bin</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
-    body {
-      font-family: 'Share Tech Mono', monospace;
-      font-size: 18px;
-      color: #111;
-      background-color: white;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      box-sizing: border-box;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0xfarco - bin</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="bin">
+      <h1>bin</h1>
+      <h2>System</h2>
+      <table class="data-table">
+        <!-- <thead>
+             <tr>
+               <th>Program</th>
+               <th>Link</th>
+             </tr>
+        </thead> -->
 
-    h1 {
-      font-family: 'Press Start 2P', cursive;
-      font-size: 36px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+        <tbody>
+          <tr>
+            <td>Operating System</td>
+            <td><a href="https://artixlinux.org/" target="_blank">Artix</a></td>
+          </tr>
 
-    h2 {
-      font-size: 28px;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
+          <tr>
+            <td>Terminal</td>
+            <td><a href="https://github.com/0xfarco/st" target="_blank">ST</a></td>
+          </tr>
 
-    p {
-      max-width: 800px;
-      line-height: 1.6;
-    }
+          <tr>
+            <td>Shell</td>
+            <td><a href="https://www.gnu.org/software/bash/" target="_blank">Bash</a></td>
+          </tr>
+        </tbody>
+      </table>
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
+      <h2>Window Management</h2>
+      <table class="data-table">
+        <!-- <thead>
+             <tr>
+               <th>Program</th>
+               <th>Link</th>
+             </tr>
+        </thead> -->
 
-    table, th, td {
-      border: 1px solid #ddd;
-    }
+        <tbody>
+          <tr>
+            <td>Window Manager / Desktop Environment</td>
+            <td><a href="https://github.com/0xfarco/dwm" target="_blank">DWM</a></td>
+          </tr>
 
-    th, td {
-      padding: 8px;
-      text-align: left;
-    }
+          <tr>
+            <td>Status Monitor</td>
+            <td><a href="https://github.com/0xfarco/slstatus" target="_blank">slStatus</a></td>
+          </tr>
 
-    th {
-      background-color: #f2f2f2;
-    }
+          <tr>
+            <td>Application Launcher</td>
+            <td><a href="https://github.com/0xfarco/dmenu" target="_blank">DMenu</a></td>
+          </tr>
+          
+          <tr>
+            <td>Screen Locker</td>
+            <td><a href="https://tools.suckless.org/slock/" target="_blank">sLock</a></td>
+          </tr>
+        </tbody>
+      </table>
 
-    a {
-      color: #111;
-      text-decoration: none;
-      font-weight: bold;
-    }
+      <h2>Utilities</h2>
+      <table class="data-table">
+        <!-- <thead>
+             <tr>
+               <th>Program</th>
+               <th>Link</th>
+             </tr>
+        </thead> -->
 
-    a:hover {
-      color: #ff5733;
-    }
+        <tbody>
+          <tr>
+            <td>Text Editor</td>
+            <td>
+              <a href="https://github.com/0xfarco/dotfiles/tree/main/.emacs.d" target="_blank">Emacs</a> /
+              <a href="https://github.com/0xfarco/dotfiles/tree/main/nvim" target="_blank">NVIM</a>
+            </td>
+          </tr>
 
-    .back-link {
-      margin-top: 30px;
-      font-size: 20px;
-    }
+          <tr>
+            <td>Virtualization Software</td>
+            <td><a href="https://github.com/0xfarco/virt" target="_blank">QEMU</a></td>
+          </tr>
 
-    @media screen and (max-width: 480px) {
-      h1 {
-        font-size: 28px;
-      }
+          <tr>
+            <td>Browser</td>
+            <td><a href="https://librewolf.net/" target="_blank">LibreWolf</a></td>
+          </tr>
 
-      h2 {
-        font-size: 24px;
-      }
+          <tr>
+            <td>Git Client</td>
+            <td><a href="https://magit.vc/" target="_blank">Magit</a></td>
+          </tr>
+        </tbody>
+      </table>
 
-      p, td {
-        font-size: 16px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="bin">
-    <h1>bin</h1>
-    <h2>Programs</h2>
+      <h2>Planning & Information</h2>
+      <table class="data-table">
+        <!-- <thead>
+             <tr>
+               <th>Program</th>
+               <th>Link</th>
+             </tr>
+        </thead> -->
 
-    <table id="programs-table">
-        <!-- <thead> -->
-          <!-- <tr> -->
-          <!-- <th>Program Type</th> -->
-          <!-- <th>Tool</th> -->
-          <!-- </tr> -->
-        <!-- </thead> -->
-      <tbody>
-        <!-- Programs will be injected here via JavaScript -->
-      </tbody>
-    </table>
+        <tbody>
+          <tr>
+          <tr>
+            <td>Note-Taking</td>
+            <td><a href="https://orgmode.org/" target="_blank">Org-Mode</a></td>
+          </tr>
 
-    <div class="back-link">
-      <a href="index.html">&larr; ../home</a>
+          <tr>
+            <td>Mail Client</td>
+            <td><a href="https://neomutt.org/" target="_blank">NeoMutt</a></td>
+          </tr>
+
+          <tr>
+            <td>Agenda & Tasks</td>
+            <td><a href="https://orgmode.org/" target="_blank">Org-Agenda</a></td>
+          </tr>
+
+          <tr>
+            <td>RSS Reader</td>
+            <td><a href="https://newsboat.org/" target="_blank">Newsboat</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Production</h2>
+      <table class="data-table">
+        <!-- <thead>
+             <tr>
+               <th>Program</th>
+               <th>Link</th>
+             </tr>
+        </thead> -->
+
+        <tbody>
+
+          <tr>
+            <td>PDF Viewer</td>
+            <td><a href="https://pwmt.org/projects/zathura/" target="_blank">Zathura</a></td>
+          </tr>
+
+          <tr>
+            <td>Image Viewer</td>
+            <td><a href="https://github.com/nsxiv/nsxiv" target="_blank">NSXIV</a></td>
+          </tr>
+
+          <tr>
+            <td>Video Player</td>
+            <td><a href="https://mpv.io/" target="_blank">MPV</a></td>
+          </tr>
+
+          <tr>
+            <td>Recording</td>
+            <td>
+              <a href="https://github.com/0xfarco/dotfiles/blob/main/bin/record" target="_blank">FFmpeg</a>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>Presentation</td>
+            <td><a href="https://github.com/0xfarco/sent" target="_blank">Sent</a></td>
+          </tr>
+
+          <tr>
+            <td>Image Modification</td>
+            <td><a href="https://www.gimp.org/" target="_blank">GIMP</a></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="back-link">
+        <a href="index.html">&larr; home</a>
+      </div>
     </div>
-  </div>
 
-  <script>
-    fetch('programs.json')
-      .then(res => res.json())
-      .then(data => {
-        const tbody = document.querySelector('#programs-table tbody');
-        data.forEach(program => {
-          const tr = document.createElement('tr');
-
-          // Program Type
-          const tdType = document.createElement('td');
-          tdType.textContent = program.type;
-
-          // Program Tool as a Hyperlink (if it's an array)
-          const tdTool = document.createElement('td');
-          if (Array.isArray(program.tool)) {
-            tdTool.innerHTML = program.tool.map(t => `<a href="${t.link}" target="_blank">${t.name}</a>`).join(' / ');
-          } else {
-            tdTool.innerHTML = `<a href="${program.link}" target="_blank">${program.tool}</a>`;
-          }
-
-          tr.appendChild(tdType);
-          tr.appendChild(tdTool);
-          tbody.appendChild(tr);
-        });
-      })
-      .catch(err => {
-        console.error('Failed to load programs.json:', err);
-      });
-  </script>
-</body>
+  </body>
 </html>
 

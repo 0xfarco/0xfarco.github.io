@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
+body {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 18px;
+    color: #111;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.home h1,
+.usr h1,
+.opt h1,
+.bin h1,
+.var h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.opt h2,
+.bin h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.home-links {
+    font-size: 24px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-links a {
+    text-decoration: none;
+    margin: 10px;
+    color: inherit;
+    font-size: 1.5rem; 
+}
+
+.home-links a:hover {
+    color: #ff5733; 
+}
+
+.separator {
+    margin: 10px;
+    letter-spacing: -2px;
+    vertical-align: middle;
+}
+
+p {
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+a {
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff5733; 
+}
+
+.back-link {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.var-links {
+    font-size: 24px; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width: 100%; 
+}
+
+.link-box {
+    background-color: #ffffff; 
+    border: 1px solid #333; 
+    padding: 15px; 
+    margin: 10px; 
+    width: calc(45% - 20px); 
+    text-align: center; 
+    font-size: 1rem;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+}
+
+.var-links a {
+    text-decoration: none;
+    color: inherit; 
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.var-links a:hover {
+    color: #ff5733;
+}
+
+.var-links a i {
+    margin-right: 8px; 
+}
+
+@media screen and (min-width: 768px) {
+    .home h1 {
+        font-size: 60px;
+    }
+
+    .home-links a {
+        font-size: 1.8rem; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .home-links a {
+        font-size: 18px; 
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    td {
+        font-size: 16px;
+    }
+
+    .var-links a {
+        font-size: 18px; 
+    }
+
+    .link-box {
+        width: 100%; 
+    }
+}

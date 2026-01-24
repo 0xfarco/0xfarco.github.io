@@ -1,149 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>opt</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
-    body {
-      font-family: 'Share Tech Mono', monospace;
-      font-size: 18px;
-      color: #111;
-      background-color: white;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      box-sizing: border-box;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>0xfarco - opt</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="opt">
+      <h1 class="heading">opt</h1>
 
-    h1 {
-      font-family: 'Press Start 2P', cursive;
-      font-size: 36px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+      <!-- Achievements Section -->
+      <h2 class="subheading">Achievements</h2>
+      <p>
+        - Achieved the highest score in the IEEE Launchpad 2024. <br>
+        - Winner of the IEEE Launchpad CTF 2024. <br>
+        - Winner of the μLearn illuμnate CTF 2024. <br>
+      </p>
 
-    h2 {
-      font-size: 28px;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
+      <!-- Projects Table -->
+      <h2>Projects</h2>
+      <!-- ><table id="projects-table" border="1"> -->
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
 
-    p {
-      max-width: 800px;
-      line-height: 1.6;
-    }
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://github.com/0xfarco/foodfinder" target="_blank">
+                  Food Finder
+                </a>
+              </td>
+              <td>
+                A web application that displays a list of restaurants and their locations, allowing users to view detailed information for each entry. The project includes GitHub OAuth authentication, enabling users to log in and maintain a personalized wishlist of locations
+              </td>
+            </tr>
 
-    a {
-      color: #111;
-      text-decoration: none;
-      font-weight: bold;
-    }
+            <tr>
+              <td>
+                <a href="https://github.com/0xfarco/rooster" target="_blank">
+                  Rooster
+                </a>
+              </td>
+              <td>
+                A basic web server in Rust that listens for TCP connections, parses HTTP requests, and generates appropriate HTTP responses. The server uses a thread pool to handle multiple requests concurrently, improving throughput and performance
+              </td>
+            </tr>
 
-    a:hover {
-      color: #ff5733;
-    }
+            <tr>
+              <td>
+                <a href="https://github.com/0xfarco/letterbox" target="_blank">
+                  LetterBox
+                </a>
+              </td>
+              <td>
+                A cloud-native newsletter application built with Rust, Actix Web, and PostgreSQL. The project includes a subscription handler that manages user subscriptions, storing data asynchronously in a PostgreSQL database via SQLx. It also integrates tracing for structured logging and telemetry, enabling real-time monitoring of application performance and subscription events
+              </td>
+            </tr>
 
-    .back-link {
-      margin-top: 30px;
-      font-size: 20px;
-    }
+            <tr>
+              <td>
+                <a href="https://github.com/0xfarco/chisel" target="_blank">
+                  Chisel
+                </a>
+              </td>
+              <td>
+                Chisel is a simple C-based tool that automates video editing by reading a CHISEL file describing input videos and timestamped chunks. It uses FFmpeg to extract and concatenate these chunks into a final video
+              </td>
+            </tr>
 
-    table {
-      width: 100%;
-      max-width: 900px;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
+            <tr>
+              <td>
+                <a href="https://github.com/0xfarco/shellium" target="_blank">
+                  Shellium
+                </a>
+              </td>
+              <td>
+                A simple command-line shell implemented in C. It supports executing system commands, built-in commands such as `cd`, `help`, and `exit`, and provides basic process control through forking and waiting
+              </td>
+            </tr>
 
-    table, th, td {
-      border: 1px solid #ddd;
-    }
+            <tr>
+              <td>
+                <a href="https://github.com/0xfarco/pica" target="_blank">
+                  Pica
+                </a>
+              </td>
+              <td>
+                A simple image viewer application built with SDL2 and SDL2_image that displays images (PNG, JPG) and supports zooming via keyboard and mouse wheel
+              </td>
+            </tr>
 
-    th, td {
-      padding: 8px;
-      text-align: left;
-    }
+            <tr>
+              <td>
+                <a href="https://github.com/0xfarco/shadex" target="_blank">
+                  Shadex
+                </a>
+              </td>
+              <td>
+                A command-line tool written in C that converts input images into their nearest ANSI 256-color palette equivalents. The color matching can be performed in either the HSL or RGB color spaces
+              </td>
+            </tr>
 
-    th {
-      background-color: #f2f2f2;
-    }
+            <tr>
+              <td>
+                <a href="https://github.com/0xfarco/virtualc3" target="_blank">
+                  VirtuaLC3
+                </a>
+              </td>
+              <td>
+                A simple emulator for the LC-3 (Little Computer 3) virtual machine, implemented in C. It can load LC-3 binary images and execute them, supporting most of the LC-3 instruction set including traps, memory-mapped I/O, and keyboard input
+              </td>
+            </tr>
 
-    @media screen and (max-width: 480px) {
-      h1 {
-        font-size: 28px;
-      }
+            <tr>
+              <td>
+                <a href="https://github.com/0xfarco/cadet" target="_blank">
+                  Cadet
+                </a>
+              </td>
+              <td>
+                A simple text editor built in C that offers essential features such as file creation, editing, and saving with a minimalist interface
+              </td>
+            </tr>
 
-      h2 {
-        font-size: 24px;
-      }
+            <tr>
+              <td>
+                <a href="https://github.com/0xfarco/zoomer" target="_blank">
+                  Zoomer
+                </a>
+              </td>
+              <td>
+                Zoomer captures a screenshot of the entire desktop on an X11-based system (Linux) and displays it in a window using SDL2. It supports basic interactive zoom and pan functionality with the mouse and keyboard modifiers
+              </td>
+            </tr>
 
-      p {
-        font-size: 16px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="opt">
-    <h1>opt</h1>
+            <tr>
+              <td>
+                <a href="https://github.com/0xfarco/snortify" target="_blank">
+                  Snortify
+                </a>
+              </td>
+              <td>
+                A simple interactive Bash script tool that helps you generate Snort IDS rules quickly and easily from the command line
+              </td>
+            </tr>
 
-    <!-- Achievements Section -->
-    <h2>Achievements</h2>
-    <p>
-      - Achieved the highest score in the IEEE Launchpad 2024. <br>
-      - Winner of the IEEE Launchpad CTF 2024. <br>
-      - Winner of the μLearn illuμnate CTF 2024. <br>
-    </p>
+            <tr>
+              <td>
+                <a href="https://github.com/0xfarco/aestego" target="_blank">
+                  Aestego
+                </a>
+              </td>
+              <td>
+                A tool for securely hiding AES-encrypted data in images using LSB steganography
+              </td>
+            </tr>
 
-    <!-- Projects Table -->
-    <h2>Projects</h2>
-    <table id="projects-table">
-      <thead>
-        <tr>
-          <th>Project Name</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Projects will be injected here via JavaScript -->
-      </tbody>
-    </table>
+            <tr>
+              <td>
+                <a href="https://github.com/0xfarco/term256" target="_blank">
+                  Term256
+                </a>
+              </td>
+              <td>
+                A terminal tool to display all 256 colors supported by modern terminals
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
 
-    <!-- Back Link -->
-    <div class="back-link">
-      <a href="index.html">&larr; ../home</a>
+        <!-- Back Link -->
+        <div class="back-link">
+          <a href="index.html">&larr; home</a>
+        </div>
     </div>
-  </div>
 
-  <script>
-    fetch('projects.json')
-      .then(res => res.json())
-      .then(data => {
-        const tbody = document.querySelector('#projects-table tbody');
-        data.forEach(project => {
-          const tr = document.createElement('tr');
-
-          const tdName = document.createElement('td');
-          tdName.innerHTML = `<a href="${project.link}" target="_blank">${project.name}</a>`;
-
-          const tdDesc = document.createElement('td');
-          tdDesc.textContent = project.description;
-
-          tr.appendChild(tdName);
-          tr.appendChild(tdDesc);
-          tbody.appendChild(tr);
-        });
-      })
-      .catch(err => {
-        console.error('Failed to load projects.json:', err);
-      });
-  </script>
-</body>
+  </body>
 </html>
 
