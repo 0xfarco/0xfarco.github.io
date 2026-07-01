@@ -2,8 +2,8 @@
 body {
     font-family: 'Share Tech Mono', monospace;
     font-size: 18px;
-    color: #111;
-    background-color: white;
+    color: #ffffff;
+    background-color: #111111;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -48,7 +48,7 @@ body {
 }
 
 .home-links a:hover {
-    color: #ff5733; 
+    color: #00cd00; 
 }
 
 .separator {
@@ -69,7 +69,7 @@ a {
 }
 
 a:hover {
-    color: #ff5733; 
+    color: #00cd00; 
 }
 
 .back-link {
@@ -85,7 +85,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #333;
 }
 
 th, td {
@@ -94,7 +94,7 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #222222;
 }
 
 .var-links {
@@ -106,7 +106,7 @@ th {
 }
 
 .link-box {
-    background-color: #ffffff; 
+    background-color: #222222; 
     border: 1px solid #333; 
     padding: 15px; 
     margin: 10px; 
@@ -127,7 +127,7 @@ th {
 }
 
 .var-links a:hover {
-    color: #ff5733;
+    color: #00cd00;
 }
 
 .var-links a i {
