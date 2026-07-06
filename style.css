@@ -18,7 +18,8 @@ body {
 .usr h1,
 .opt h1,
 .bin h1,
-.var h1 {
+.var h1,
+.donate h1 {
     font-family: 'Press Start 2P', cursive;
     font-size: 40px;
     text-align: center;
@@ -48,7 +49,7 @@ body {
 }
 
 .home-links a:hover {
-    color: #00cd00; 
+    color: #ff6600; 
 }
 
 .separator {
@@ -69,7 +70,7 @@ a {
 }
 
 a:hover {
-    color: #00cd00; 
+    color: #ff6600; 
 }
 
 .back-link {
@@ -127,11 +128,69 @@ th {
 }
 
 .var-links a:hover {
-    color: #00cd00;
+    color: #ff6600;
 }
 
 .var-links a i {
     margin-right: 8px; 
+}
+
+.donate hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 20px 0 35px;
+}
+
+.donate-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.donate-item {
+    width: 100%;
+    max-width: 550px;
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.donate-item h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.donate-item i {
+    color: #ff6600;
+    margin-right: 8px;
+}
+
+.donation-qr {
+    display: block;
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 24px;
+    border-radius: 6px;
+}
+
+.address {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+    /* Important for long Monero addresses */
+    word-break: break-all;
+    overflow-wrap: anywhere;
+    user-select: all;
 }
 
 @media screen and (min-width: 768px) {
@@ -141,6 +200,22 @@ th {
 
     .home-links a {
         font-size: 1.8rem; 
+    }
+
+    .donate-item {
+        padding: 18px;
+    }
+
+    .donate-item h2 {
+        font-size: 1.4rem;
+    }
+
+    .donation-qr {
+        width: 220px;
+    }
+
+    .address {
+        font-size: 0.85rem;
     }
 }
 
@@ -170,10 +245,26 @@ th {
     }
 
     .var-links a {
-        font-size: 18px; 
+        font-size: 16px; 
     }
 
     .link-box {
         width: 100%; 
+    }
+
+    .donate-item {
+        padding: 16px;
+    }
+
+    .donate-item h2 {
+        font-size: 1.4rem;
+    }
+
+    .donation-qr {
+        width: 180px;
+    }
+
+    .address {
+        font-size: 0.8rem;
     }
 }
